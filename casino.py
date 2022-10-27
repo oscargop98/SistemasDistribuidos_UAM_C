@@ -1,4 +1,4 @@
-// Encuentra el valor de π
+#Encuentra el valor de π
 import random
 
 n = 1000000
