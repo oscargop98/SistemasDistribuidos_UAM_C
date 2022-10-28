@@ -1,7 +1,7 @@
 from random import uniform
 from time import sleep
 from mpi4py import MPI
-from cmath import sinh
+from cmath import sinh 
 import numpy as np
 # import matplotlib.pyplot as plt
 from numpy.random import uniform as unif
@@ -15,10 +15,10 @@ name = MPI.Get_processor_name()
 shared = (rank+1)*5
 
 #Estas 2 lineas son para graficar
-
+ 
 c = np.linspace(0.0001,3.2)
 #Funcion de la integral
-f=1/(1+np.sinh(2*c)(np.log(c))*2)
+f=1/(1+np.sinh(2*c)*(np.log(c))**2)
 
 #Aqui genera numeros aleatorios espcificamente en este intervalo
 lim_inf = 0.8
@@ -70,3 +70,6 @@ else:
 # plt.ylabel('y')
 # plt.plot(c,f)
 # plt.hist(x,density=True)
+
+
+
