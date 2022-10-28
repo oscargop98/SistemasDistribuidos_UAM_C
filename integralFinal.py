@@ -15,7 +15,7 @@ name = MPI.Get_processor_name()
 shared = (rank+1)*5
 
 #Estas 2 lineas son para graficar
-
+ 
 c = np.linspace(0.0001,3.2)
 #Funcion de la integral
 f=1/(1+np.sinh(2*c)*(np.log(c))**2)
