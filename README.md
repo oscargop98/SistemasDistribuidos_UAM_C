@@ -22,7 +22,7 @@ Posteriormente como líder distrubuí a mis compañeros y colaboradores: Uriel y
 Las distrubiones de las respectivas tareas restantes se le asignó a los colaboradores: 
 1. Alan Keveen Bastida Cervantes
     - Función: is_empty
-    - Funcón: push
+    - Funcón: Insert
 
 2. Alan Uriel Martínez Sánchez
     - Función: Clear
