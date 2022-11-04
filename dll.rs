@@ -33,14 +33,6 @@ impl<T> DoublyLinkedList<T> {
             size: 0,
         }
     }
-
-    pub fn is_empty(&self) -> bool {
-        self.len() == 0
-    }
-
-    pub fn len(&self) -> usize {
-        self.size
-    }
     
     pub fn push_back(&mut self, item: T) {
         let node = Rc::new(RefCell::new(ListNode::new(item)));
