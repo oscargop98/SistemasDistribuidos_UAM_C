@@ -6,7 +6,7 @@ Alumnos:
 - Alan Keeven Bastid Cervantes
 - Alan Uriel Martinez Sanchez
 
-##Lista Doblementa Ligada en Rust (dll.rs)
+## Lista Doblementa Ligada en Rust (dll.rs)
 Este programa fue creado en lenguaje RUST en este se busca implementar una lista doblemente ligada, como primera instancia nos basamos en el video de toma casita pra tener un mejor entendimiento del lenguaje y posteriormente fuimos daptando deacuerdo a la logica de la programacion en c++ y para ello  
 
 Inciamos implementando la estructura del NODO donde contamos con un apuntador PREVIO y  un apuntador SIGUIENTE.
