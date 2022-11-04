@@ -6,7 +6,10 @@ Alumnos:
 - Alan Keeven Bastid Cervantes
 - Alan Uriel Martinez Sanchez
 
-Yo como lider(Oscar)
+Yo como lider(Oscar) implementé los método 
+Y el equipo implemento la estructura del NODO donde contamos con un apuntador PREVIO y  un apuntador SIGUIENTE.
+Utilizando enlaces o links<T>, un enlace opcional al archivo NODE.
+Utilizando las librerias  
 
 Este programa fue creado en lenguaje RUST en este se busca implementar una lista doblemente ligada, como primera instancia nos basamos en el video de toma casita pra tener un mejor entendimiento del lenguaje y posteriormente fuimos daptando deacuerdo a la logica de la programacion en c++ y para ello  
 se tomo como referencia el ideo del siguiente enlace: 
