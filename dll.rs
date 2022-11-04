@@ -54,7 +54,7 @@ impl<T> DoublyLinkedList<T> {
             self.tail = Some(node);
             self.size = 1;
         }
-        println!("CREATED\n");
+        println!("Creados\n");
     }
 
     pub fn push_front(&mut self, item: T) {
@@ -69,40 +69,7 @@ impl<T> DoublyLinkedList<T> {
             self.tail = Some(node);
             self.size = 1;
         }
-    }
-    
-    pub fn pop_back(&mut self) -> Option<T> {
-        self.tail.take().map(|prev_tail| {
-            self.size -= 1;
-            match prev_tail.borrow_mut().prev.take() {
-                Some(node) => {
-                    node.borrow_mut().next = None;
-                    self.tail = Some(node);
-                }
-                None => {
-                    self.head.take();
-                }
-            }
-            Rc::try_unwrap(prev_tail).ok().unwrap().into_inner().item
-        })
-    }
-    
-    pub fn pop_front(&mut self) -> Option<T> {
-        self.head.take().map(|prev_head| {
-            self.size -= 1;
-            match prev_head.borrow_mut().next.take() {
-                Some(node) => {
-                    node.borrow_mut().prev = None;
-                    self.head = Some(node);
-                }
-                None => {
-                    self.tail.take();
-                }
-            }
-            Rc::try_unwrap(prev_head).ok().unwrap().into_inner().item
-        })
-    }
-    
+    }    
 }
 
 impl<T> Drop for DoublyLinkedList<T> {
@@ -110,46 +77,12 @@ impl<T> Drop for DoublyLinkedList<T> {
         while let Some(node) = self.head.take() {
             let _ = node.borrow_mut().prev.take();
             self.head = node.borrow_mut().next.take();
-            println!("DESTROYED\n");
+            println!("Destruido\n");
         }
         self.tail.take();
     }
 }
 
-
-
-/*struct Token {}
-
-impl Token {
-    fn new() -> Self {
-        println!("CREATED");
-        Self {}
-    }
-}
-
-impl Drop for Token {
-    fn drop(&mut self) {
-        println!("DESTROYED");
-    }
-}
-
-struct ListNode<T> {
-    item: T,
-    next: Link<T>,
-    prev: Link<T>,
-    token: Token,
-}
-
-impl<T> ListNode<T> {
-    fn new(item: T) -> Self {
-        Self {
-            item,
-            next: None,
-            prev: None,
-            token: Token::new(),
-        }
-    }
-}*/
 fn main(){
     //let mut list = DoublyLinkedList::new();
     let mut list = DoublyLinkedList::new();
