@@ -6,6 +6,7 @@ Alumnos:
 - Alan Keeven Bastid Cervantes
 - Alan Uriel Martinez Sanchez
 
+##Lista Doblementa Ligada en Rust (dll.rs)
 Este programa fue creado en lenguaje RUST en este se busca implementar una lista doblemente ligada, como primera instancia nos basamos en el video de toma casita pra tener un mejor entendimiento del lenguaje y posteriormente fuimos daptando deacuerdo a la logica de la programacion en c++ y para ello  
 
 Inciamos implementando la estructura del NODO donde contamos con un apuntador PREVIO y  un apuntador SIGUIENTE.
@@ -14,10 +15,10 @@ Posteriormente implementamos las estrucuturas, junto con los meetodos Push (Back
 Dentro de esta estrucutura de la lista doblemente ligada, debemos definir el Nodo de incio (Head) y Nodo Final (Tail).
 También se definio el tamaño en el que se declara la Lista. Incializanda desde 0.
 
-## DEFINCIÓN DE TAREAS 1
+### Definición de tareas 1
 Posteriormente como líder distrubuí a mis compañeros y colaboradores: Uriel y Keeven. los métodos; Pop Back y Pop Front respectivamente.
 
-## Definción de Tareas 2
+### Definción de Tareas 2
 Las distrubiones de las respectivas tareas restantes se le asignó a los colaboradores: 
 1. Alan Keveen Bastida Cervantes
     - Función: is_empty
@@ -33,7 +34,7 @@ Las distrubiones de las respectivas tareas restantes se le asignó a los colabor
 
 se tomo como referencia el ideo del siguiente enlace: 
 
-## Librerias
+### Librerias
 Para el uso de nuestro programa requerimos el uso de la libreria:
 - Cell 
     - El modulo estandar cell es utilizada para implementar contenedores mutables compartibles.
