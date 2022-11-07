@@ -1,4 +1,4 @@
-//Modificaciones uriel
+
 use std::{cell::RefCell, rc::Rc, fmt::Debug};
 // use std::ops::Deref;
 
@@ -10,10 +10,6 @@ struct ListNode<T> {
     prev: Link<T>,
 }
 
-// struct ListNodeTemp<T> {
-//     next: Link<T>,
-//     prev: Link<T>,
-// }
 
 impl<T> ListNode<T> where T: Debug + Ord {
     fn new(item: T) -> Self {
@@ -23,10 +19,6 @@ impl<T> ListNode<T> where T: Debug + Ord {
             prev: None,
         }
     }
-    // fn temporal(){
-    //         next: None;
-    //         prev: None;
-    // }
 
 }
 
@@ -136,7 +128,7 @@ impl<T> DoublyLinkedList<T> where T: Debug + Ord {
             self.size = 1;
         }
     }
-
+    // Sin terminar
     pub fn insertar(&mut self,item: T, _pos: usize) {
         //Si no hay ni un nodo
         if self.size==0{
@@ -173,7 +165,7 @@ impl<T> DoublyLinkedList<T> where T: Debug + Ord {
                 //Node * temp = head;
                 if let Some(prev_posicion) = self.head.take() {
 
-                    println!("El temporal es: {:?}",prev_posicion.borrow_mut().item);
+                    // println!("El temporal es: {:?}",prev_posicion.borrow_mut().item);
 
                     println!("valor de prev_posicion: {:?}",prev_posicion.borrow_mut().item);
                     // println!("El apuntado es nulo: {:?}", prev_posicion.as_ptr().is_null());
@@ -261,7 +253,7 @@ fn main(){
     // //pop back
     // list.pop_back();
     println!("tamanio de la lista: {:?}",list.len());
-    // list.insertar(10, 5);
+    list.insertar(10, 1);
     // println!("=========== insercciion 2 =======");
     // list.insertar(18, 6);
     //Borrar todos
